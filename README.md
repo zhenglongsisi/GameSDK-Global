@@ -84,9 +84,11 @@ dependencies {
 ### 2.3 集成Firebase
 
 1. 将 Firebase Android 配置文件添加到您的应用：
+
     a. 将出包参数内的`google-services.json`文件复制到应用的模块（应用级）目录中
 
 2. 添加`google-services 插件`到项目
+
     a. 在项目根目录下的`build.gradle`文件中添加插件依赖
     
     ```groovy
