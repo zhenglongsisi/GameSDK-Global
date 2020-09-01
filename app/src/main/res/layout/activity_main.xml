@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startLogin"
+        android:text="登录" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="logout"
+        android:text="登出" />
+
+    <EditText
+        android:id="@+id/product_id_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入商品ID"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pay"
+        android:text="支付测试"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="shareToFacebook"
+        android:text="Facebook分享"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="reportRole"
+        android:text="上报游戏角色" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="reportTutorialCompleted"
+        android:text="上报完成新手教程" />
+
+    <Button
+        android:onClick="showRewardVideoAd"
+        android:text="播放激励视频广告"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

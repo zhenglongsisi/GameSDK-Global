@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        //applicationId "com.xinkuai.globalsdk.sample"
+        applicationId "com.mx.kykr"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0.0"
+
+        multiDexEnabled true //解决64k
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    //解决64k
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //新快海外版SDK依赖
+    implementation 'com.xinkuai.globalsdk:gamesdk:1.0.0'
+
+}
